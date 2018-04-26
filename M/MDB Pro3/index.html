@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>華友聯index</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/indexpage.css" rel="stylesheet">
+    <link href="css/indexfooter.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sn black-skin " style="padding-bottom: 80px;">
+
+    <!-- Start your project here-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed ">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light">
+                        <a href="#"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> 首頁<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="submit.html" class="waves-effect"><i class="fa fa-hand-pointer-o"></i>我要報修</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect"><i class="fa fa-eye"></i>維修狀態追蹤</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> 客服中心<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>華友聯</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-gear fa-lg p-0" aria-hidden="true"></i> 設定
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">登出</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!-- /.報修 -->
+    <div class="tab-content px-0">
+        <div class="tab-pane fade in show active" id="fix" role="tabpanel">
+            <div class="container mt-3">
+                <div class="mt-1 text-center">
+                    <a href="M_clist.html"><button type="button" class="btn btn-ins m-0 w-40"><i class="fa fa-wrench" aria-hidden="true"></i></br>案件<br>清單</button></a>
+                    <a href="M_blist.html"><button type="button" class="btn btn-indigo m-0 w-40"><i class="fa fa-building" aria-hidden="true"></i></br>建案</br>清單</button></a>
+                </div>
+                    <!-- /.<div class="col-12 mt-4">
+                        <span class="h4">各工務主任</span>
+                    </div> -->
+                    <div class="row col-12" id="min-h">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="py-1 font-weight-bold">工務主任</th>
+                                    <th scope="col" class="py-1 font-weight-bold">平均滿意度</th>
+                                    <th scope="col" class="py-1 font-weight-bold">手邊案件數</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="py-1 fontsm "><a href="M_ed.html">黃麗紅</th>
+                                        <td class="py-1 fontsm "><a href="M_ed.html">4.2</a></td>
+                                        <td class="py-1 fontsm "><a href="M_ed.html">12</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">鄭清滿</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">4.0</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">15</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">許智傑</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">3.5</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">12</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">林子瑞</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">4.5</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">32</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">蔡偉杰</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">5.0</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">22</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">蘇聯發</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">4.2</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">5</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">林書豪</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">4.6</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">6</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">郭憲武</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">2.5</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">18</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="py-1 fontsm">陳情方</th>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">4.6</a></td>
+                                    <td class="py-1 fontsm "><a href="M_ed.html">12</a></td>
+                                </tr>
+
+                                </tr>
+                        </table>
+                    </div>
+            </div>
+
+
+        </div>
+        <!-- /.搜尋 -->
+        <div class="tab-pane fade" id="notice" role="tabpanel">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="form-check">
+                        <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap4" checked="checked">
+                        <label class="form-check-label" for="radioWithGap4">案件</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5">
+                        <label class="form-check-label" for="radioWithGap5">住戶</label>
+                    </div>
+                    <div class="form-check ">
+                        <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap6">
+                        <label class="form-check-label" for="radioWithGap6">工務主任</label>
+                    </div>
+                </div>
+                <div class="">
+                    案名
+                    <select class="mdb-select">
+                    <option value="" disabled selected></option>
+                    <option value="1">所有案名</option>
+                    <option value="2">舞樂天</option>
+                    <option value="3">世紀風華</option>
+                    <option value="3">JIA</option>
+                </select>
+                </div>
+                <div class="">
+                    戶號
+                    <input class="form-control" type="text">
+                </div>
+                <div class="">
+                    維修完成日期
+                    <input type="date" id="new" class="form-control">
+                </div>
+                <div class="">
+                    聯絡人
+                    <input class="form-control" type="text">
+                </div>
+                <a href="M_SearchResult.html"><button type="button" class="btn btn-indigo">搜尋</button></a>
+            </div>
+        </div>
+
+        <!-- /.審核 -->
+        <div class="tab-pane fade" id="status" role="tabpanel">
+            <div class="container mt-2 pt-2">
+                <div class="row" id="min-h">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th scope="" class="py-1 font-weight-bold h6">維修日期 </th>
+                                <th scope="" class="py-1 font-weight-bold h6">維修事項</th>
+                                <th scope="" class="py-1 font-weight-bold h6">負責主任</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="py-1 fontsm"><a href="M_cds.html">2018/02/11</a></th>
+                                <td class="py-1 fontsm"><a href="M_cds.html">壁癌處理</a></td>
+                                <td class="py-1 fontsm"><a href="M_cds.html">黃麗紅
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2018/02/02</th>
+                                <td class="py-1 fontsm">油漆工程</td>
+                                <td class="py-1 fontsm">
+                                    鄭清滿
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2018/01/03</th>
+                                <td class="py-1 fontsm">水電處理</td>
+                                <td class="py-1 fontsm">
+                                    許智傑	
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2017/12/04</th>
+                                <td class="py-1 fontsm">電器處理</td>
+                                <td class="py-1 fontsm">
+                                    林子瑞
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2017/11/05</th>
+                                <td class="py-1 fontsm">家具維修</td>
+                                <td class="py-1 fontsm">
+                                    蔡偉杰
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2017/11/01</th>
+                                <td class="py-1 fontsm">其他維修</td>
+                                <td class="py-1 fontsm">
+                                    蘇聯發
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-1 fontsm">2017/10/17</th>
+                                <td class="py-1 fontsm">其他維修</td>
+                                <td class="py-1 fontsm">
+                                    林書豪
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="page-footer fixed-bottom font-small pt-0">
+        <div class="container-fluid pl-0 pr-0">
+            <div class="tabs-wrapper">
+                <ul class="nav classic-tabs tabs-dark" role="tablist">
+                    <li class="nav-item maxWith">
+                        <a href="#fix" class="nav-link waves-light active" data-toggle="tab" role="tab"><i class="fa fa-home  white-text fa-2x" aria-hidden="true"> </i>
+                        </br>首頁</a>
+                                    </li>
+                                    <li class="nav-item maxWith">
+                                        <a href="#status" class="nav-link waves-light" data-toggle="tab" role="tab"><i class="fa fa-history  white-text fa-2x" aria-hidden="true"> </i>
+                        </br>審核</a>
+                                    </li>
+                                    <li class="nav-item maxWith">
+                                        <a href="#notice" class="nav-link waves-light" data-toggle="tab" role="tab"><i class="fa fa-search white-text fa-2x" aria-hidden="true"></i>
+                        </br>搜尋</a>
+                                    </li>
+                                    </ul>
+                </div>
+            </div>
+
+
+
+            <!--Footer Links-->
+
+
+            </footer>
+            <!--/Footer-->
+
+
+            <!-- /Start your project here-->
+
+
+            <!-- SCRIPTS -->
+            <!-- JQuery -->
+            <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+            <script>
+                // SideNav Button Initialization
+                $(".button-collapse").sideNav();
+                // SideNav Scrollbar Initialization
+                var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+                Ps.initialize(sideNavScrollbar);
+                // SideNav Options>
+
+                $(function() {
+                    $('#myTab a:last').tab('show')
+                });
+                $(document).ready(function() {
+                    $('.mdb-select').material_select();
+                });
+            </script>
+
+
+</body>
+
+</html>

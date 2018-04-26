@@ -1,0 +1,30 @@
+.maxWith {
+    max-width: 33.33%;
+}
+
+.maxHeight {
+    min-Height: calc(100vh - ( 46px + 86px));
+}
+
+.bgdark {
+    background-color: #212529;
+}
+
+.fontsm {
+    font-size: 35px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.overFlow {
+    overflow: scroll;
+    max-height: 550px;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: white;
+}
+
+/* Your custom styles */

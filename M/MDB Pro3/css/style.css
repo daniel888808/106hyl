@@ -1,0 +1,85 @@
+/* Your custom styles */body,
+html {
+    font-family: 微軟正黑體 Ariel;
+}
+
+textarea {
+    resize: none;
+}
+
+.col-5.mt-2.p-4,
+.border.boxShadow.position-fixed.py-3.px-4,
+.border.position-fixed.rounded,
+.col-md-4.col-lg-4.mt-2.p-4 {
+    box-shadow: 0px 0px 20px #2b282823;
+}
+
+.col-5.boxShadow.mt-2.p-4 h1 {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Your custom styles */
+
+.tableBorder {
+    border: solid 1px #dadee5;
+    border-left: none;
+}
+
+.tableWhite {
+    border: solid 2px #FFF;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.navbar.fixed-top.navbar-toggleable-md {
+    max-height: 75px;
+}
+
+.maxHeight {
+    min-Height: calc(100vh - 75px);
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.flex {
+    position: fixed;
+}
+
+.none {
+    list-style-type: none;
+}
+
+a.waves-effect.pl-3.py-2 {
+    color: white;
+}
+
+a.waves-effect.pl-3.py-2:hover {
+    background-color: #222;
+    color: #C0C0C0;
+    border: 1px solid white;
+}
+
+.borderB {
+    border-bottom: 2px solid #C0C0C0;
+    box-shadow: 0px 5px 10px #C0C0C0;
+}
+
+.z-index999 {
+    z-index: 999;
+}
+
+.top-75 {
+    top: 75px;
+}

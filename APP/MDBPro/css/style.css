@@ -1,0 +1,17 @@
+.maxWith {
+    max-width: 33.33%;
+}
+
+.maxHeight {
+    min-Height: calc(100vh - ( 46px + 86px));
+}
+
+.bgdark {
+    background-color: #212529;
+}
+
+.fontsm {
+    font-size: 15px;
+}
+
+/* Your custom styles */
