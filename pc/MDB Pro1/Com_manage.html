@@ -21,63 +21,65 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex w-100 z-index999">
-            <a class="navbar-brand mr-auto" href="E_manage.html"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
+            <a class="navbar-brand" href="All_manage.html"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
 
-            <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item ">
-                    <div class="mt-2 pr-2">
-                        <a href="">
-                            <p>使用者管理</p>
-                        </a>
-                    </div>
+            <ul class="navbar-nav nav-flex-icons mr-auto">
 
-                </li>
-                <li class="nav-item ">
-                    <div class="mt-2 pr-2">
-                        <a href="">
-                            <p>案件管理</p>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <div class="mt-2 pr-4">
-                        <a href="">
-                            <p>廠商管理</p>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <div class="dropdown mr-3 d-inline-block">
-                        <a class="nav-link dropdown-toggle pt-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        &nbsp;<i class="fa fa-bell fa-1x" aria-hidden="true"></i>&nbsp; 
+                <li class="nav-item">
+                    <a href="All_manage.html" class="nav-link">
+                        <p class="white-text">使用者管理</p>
                     </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="case.html">編號:B123456----案件已逾期</a>
-                            <a class="dropdown-item" href="case.html">編號:C983147----案件已逾期</a>
-                            <a class="dropdown-item" href="case.html">編號:F373991----案件已逾期</a>
-                        </div>
                 </li>
 
-                <li id="navbar-static-support" class="nav-item ">
-                    <div class="dropdown mr-3 d-inline-block">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                <li class="nav-item ">
+                    <a href="C_manage.html" class="nav-link">
+                        <p class="white-text">案件管理</p>
                     </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">個人資料</a>
+                </li>
 
-                            <a class="dropdown-item" href="#">登出</a>
-                        </div>
+                <li class="nav-item ">
+                    <a href="RC_manage.html" class="nav-link">
+                        <p class="white-text">廠商管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="Com_manage.html" class="nav-link">
+                        <p class="white-text">建案管理</p>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="dropdown ">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell white-text fa-10x mt-1" aria-hidden="true"></i> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="case.html">編號:B123456----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:C983147----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:F373991----案件已逾期</a>
+                    </div>
+                </li>
+
+
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-circle fa-2x white-text" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">登出</a>
                     </div>
                 </li>
             </ul>
+
         </nav>
     </header>
-    <div class="container-fulid" style="padding-top:75px">
+    <div class="container" style="padding-top:75px">
         <div class="row">
-            <div class="col-lg-1"></div>
-
-            <div class="col-lg-10 col-md-9">
+            <div class="col-12">
                 <div class="w-100 p-2 borderB">
                     <h1 class="bold">建案管理</h1>
                 </div>
@@ -98,10 +100,11 @@
                             <option value="audi">午後時光</option>
                             <option value="audi">月眉</option>
                     </select>
-                    <span class="bold mr-2">聯絡人</span><input class="m-0 p-0 " type="text ">
-                    <span class="bold mr-2">戶號</span><input class="m-0 p-0 " type="text ">
-                    <button type="button" class="btn btn-indigo btn-sm  mx-3 ">搜尋</button>
+                    <span class="bold mr-2">聯絡人</span><input class="m-0 p-0 w-8" type="text ">
+                    <span class="bold mr-2">戶號</span><input class="m-0 p-0 w-8" type="text ">
+                    <button type="button" class="btn btn-indigo btn-sm">搜尋</button>
                     <a href="Com_new.html"><button type="button" class="btn btn-indigo btn-sm">新增建案</button></a>
+                    <a href="M_setcomview.html"><button type="button" class="btn btn-indigo btn-sm">編輯工務主任負責建案</button></a>
                 </div>
                 <div class="overFlow">
                     <table class="table text-center">
@@ -111,7 +114,7 @@
                                 <th scope="col" class="h5 px-0 bold py-2">戶數</th>
                                 <th scope="col" class="h5 px-0 bold py-2">建案</th>
                                 <th scope="col" class="h5 px-0 bold py-2">編輯</th>
-
+                                <th scope="col" class="h5 px-0 bold py-2">刪除</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -125,11 +128,20 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                                                                                
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                                                                                
                             </tr>
                             <tr>
                                 <th class="py-2">經典綠園道</th>
@@ -141,11 +153,20 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                                                                                                                                                
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">舞悅天</th>
@@ -157,11 +178,19 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">水岸</th>
@@ -173,11 +202,19 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">七期</th>
@@ -189,8 +226,16 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
@@ -205,8 +250,16 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
@@ -221,11 +274,19 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">誠品</th>
@@ -237,11 +298,19 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">溜龍</th>
@@ -253,11 +322,19 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <th class="py-2">A3-3</th>
@@ -269,8 +346,16 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>
@@ -285,8 +370,16 @@
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="E_list.html">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
                                     <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                                
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="Com_edit.html">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
                                 </a>
                                     </div>
                                 </td>

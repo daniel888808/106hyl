@@ -14,117 +14,246 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/star.css" rel="stylesheet">
     <link href="css/indexpage.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white flex w-100 z-index999">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex w-100 z-index999">
             <a class="navbar-brand" href="E_manage.html"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
-            <h3 class="bold ml-3 mb-0 pt-2">華友聯後臺管理系統</h3>
-            </span>
+
+            <ul class="navbar-nav nav-flex-icons mr-auto">
+
+                <li class="nav-item">
+                    <a href="All_manage.html" class="nav-link">
+                        <p class="white-text">使用者管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="C_manage.html" class="nav-link">
+                        <p class="white-text">案件管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="RC_manage.html" class="nav-link">
+                        <p class="white-text">廠商管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="Com_manage.html" class="nav-link">
+                        <p class="white-text">建案管理</p>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="dropdown ">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell white-text fa-10x mt-1" aria-hidden="true"></i> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="case.html">編號:B123456----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:C983147----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:F373991----案件已逾期</a>
+                    </div>
+                </li>
+
+
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-circle fa-2x white-text" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">登出</a>
+                    </div>
+                </li>
+            </ul>
+
         </nav>
     </header>
-    <div class="container-fulid" style="padding-top:75px">
-        <div class="row">
-            <div class="col-lg-2 col-md-4">
-                <div class="bg-dark text-white w-200 maxHeight flex top-75">
-                    <!-- Side navigation links -->
-                    <ul class="none mt-3 p-0">
-                        <li>
-                            <a href="E_manage.html" class="waves-effect w-100 pl-3 py-2">工務主任管理</a>
-                        </li>
-                        <li>
-                            <a href="cus_infor.html" class="waves-effect w-100  pl-3 py-2">住戶資料管理</a>
-                        </li>
-                        <li>
-                            <a href="C_manage.html" class="waves-effect w-100  pl-3 py-2">案件管理</a>
-                        </li>
-                        <li>
-                            <a href="RC_manage.html" class="waves-effect w-100  pl-3 py-2">廠商管理</a>
-                        </li>
-                        <li>
-                            <a href="Com_manage.html" class="waves-effect w-100  pl-3 py-2">社區基本資料管理</a>
-                        </li>
-                        <li>
-                            <a href="Rank_manage.html" class="waves-effect w-100  pl-3 py-2">報表管理</a>
-                        </li>
-                    </ul>
+    <div class="container " style="padding-top:75px">
+        <div class="row border boxShadow mt-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <span>案名: JIA</span>
+                    </div>
+                    <div class="col-4">
+                        <span></span>
+                    </div>
+                    <div class="col-4">
+                        <span>編號: 1070001</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-lg-9 col-md-7">
-                <div class="w-100 p-2  borderB">
-                    <h1 class="bold">維修紀錄</h1>
-                </div>
-
-                    <table class="w-100 mt-2 rounded">
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">編號</td>
-                            <td class="tableBorder px-3 w-75">A123456789</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">案名</td>
-                            <td class="tableBorder px-3">JIA</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">戶號</td>
-                            <td class="tableBorder px-3">B5-5</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">工務主任</td>
-                            <td class="tableBorder px-3">許哲維</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">受理日期</td>
-                            <td class="tableBorder px-3">2018/05/06</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">施工日期</td>
-                            <td class="tableBorder px-3">2018/05/10</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">工時(小時)</td>
-                            <td class="tableBorder px-3">2小時</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">完成日期</td>
-                            <td class="tableBorder px-3">2018/05/10</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">聯絡人</td>
-                            <td class="tableBorder px-3">吳子情</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">聯絡電話</td>
-                            <td class="tableBorder px-3">0955555555</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">地址</td>
-                            <td class="tableBorder px-3">高雄市中山北路55-2號</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">待修情形</td>
-                            <td class="tableBorder px-3">水龍頭爆裂</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">維修項目</td>
-                            <td class="tableBorder px-3">更換水龍頭</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">工務副理</td>
-                            <td class="tableBorder px-3">姚明</td>
-                        </tr>
-                        <tr>
-                            <td class="tableWhite table-secondary text-center px-3 py-2">維修經辦</td>
-                            <td class="tableBorder px-3">易建聯</td>
-                        </tr>
-                    </table>
-
-                <div class="row mt-3">
-                    <div class="col-3 m-auto">
-                        <a href="#"><button type="button" class="btn btn-indigo">確認</button></a>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <span>受理日期:</span>
+                        <span>2017/01/02</span>
                     </div>
+                    <div class="col-4">
+                        <span>完成日期:</span>
+                        <span>2017/01/30</span>
+                    </div>
+                    <div class="col-4">
+                        <span>保固期限:</span>
+                        <span>2017/05/02</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <span>戶號: A5-2</span>
+                    </div>
+                    <div class="col-4">
+                        <span>客戶名稱: 高先生</span>
+                    </div>
+                    <div class="col-4">
+                        <span>聯絡人: 高先生</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <span>電話: 735-4496</span>
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4">
+                        <span>維修類型:水電類</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <span>地址: 高雄市中華路132號</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <span>維修項目: 大門損壞</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <span>原因:</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10" placeholder=" 因長年使用而有老舊且損壞的現象" disabled></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="font30">施工日期</th>
+                            <th class="font30">施工廠商</th>
+                            <th class="font30">工時</th>
+                            <th class="font30">類別</th>
+                            <th class="font30">維修內容</th>
+                            <th class="font30">維修進度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="font30" scope="row">12/31</th>
+                            <td class="font30">洪彬工程</td>
+                            <td class="font30">4</td>
+                            <td class="font30">水電類</td>
+                            <td class="font30">更換水管</td>
+                            <td class="font30">無</td>
+                        </tr>
+                        <tr>
+                            <th class="font30" scope="row">2/2</th>
+                            <td class="font30">哲維油漆</td>
+                            <td class="font30">3</td>
+                            <td class="font30">水電類</td>
+                            <td class="font30">粉刷牆壁</td>
+                            <td class="font30">無</td>
+                        </tr>
+                        <tr>
+                            <th class="font30" scope="row">3/1</th>
+                            <td class="font30">亭諺工程</td>
+                            <td class="font30">2</td>
+                            <td class="font30">水電類</td>
+                            <td class="font30">維修水槽</td>
+                            <td class="font30">無</td>
+                        </tr>
+                        <tr>
+                            <th class="font30" scope="row" colsoan="3">合計</th>
+                            <td class="font30" colspan="2">XXX</td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+            </div>
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="col-12">
+                        <span>聯絡情況:</span>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th class="font30">2018/05/02</th>
+                                <th class="font30">致電客戶確認時間</th>
+                            </tr>
+                            <tr>
+                                <th class="font30">2018/05/12</th>
+                                <th class="font30">客戶更改時間</th>
+                            </tr>
+                            <tr>
+                                <th class="font30">2018/05/15</th>
+                                <th class="font30">確認6/1維修</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-2 ">
+                客戶評價:
+                <!--沒辦法就暫時用這個簡單版的 -->
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <!--沒辦法就暫時用這個簡單版的 -->
+            </div>
+            <div class="col-12 mt-2 ">
+                客戶意見回復:
+                <div class="col-12 border boxShadow rounded p-3">
+                    <p class="font30">維修人員態度不佳</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <span>工務副理: 姚明</span>
+                </div>
+                <div class="col-6">
+                    <span>維修經辦: 易建聯</span>
                 </div>
             </div>
         </div>

@@ -323,16 +323,24 @@
         </div>
         <!-- /.通知 -->
         <div class="tab-pane fade" id="notice" role="tabpanel">
-                <div class="list-group font-weight-bold pt-3">
-                    <a href="comsus.html" class="list-group-item list-group-item-success">豐花園 水電類 3-9 水管破裂 2018/03/01</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-warning">七期 電機類 5-3 冷氣無法正常開啟 2018/02/21</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-success">水岸 水電類 3-6 水管破裂 2018/01/10</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-success">水岸 水電類 2-9 水管破裂 2017/12/22</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-warning">豐花園 電機類 3-9 電梯無法正常使用 2017/11/31</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-success">豐花園 水電類 3-2 水管破裂 2017/10/12</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-warning">七期 電機類 5-9 鐵捲門開啟時發出異音 2017/10/12</a>
-                    <a href="comsus.html" class="list-group-item list-group-item-success">豐花園 水電類 7-4 水管破裂 2017/09/01</a>
-                </div>
+            <div class="my-0 py-0 pt-3">
+                <select class="mdb-select">
+                        <option value="" disabled selected>全部顯示</option>
+                        <option value="1">全部顯示</option>
+                        <option value="2">完成通知</option>
+                        <option value="3">時間通知</option>
+                    </select>
+            </div>
+            <div class="list-group font-weight-bold pt-0">
+                <a href="comsus.html" class="list-group-item text-dark py-2 list-group-item-success">水管破裂 時間確認 2018/03/01</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2 list-group-item-success">冷氣無法.. 時間確認 2018/02/21</a>
+                <a href="star_rank.html" class="list-group-item text-dark py-2 list-group-item-warning">水管破裂 維修完成 2018/01/10</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2 list-group-item-success">水管破裂 時間確認 2017/12/22</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2  list-group-item-success">電梯無法.. 時間確認 2017/11/31</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2  list-group-item-success">水管破裂 時間確認 2017/10/12</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2  list-group-item-success">鐵捲門開.. 時間確認 2017/10/12</a>
+                <a href="comsus.html" class="list-group-item text-dark py-2 list-group-item-success">水管破裂 時間確認 2017/09/01</a>
+            </div>
         </div>
 
         <!-- /.紀錄 -->
@@ -542,6 +550,9 @@
         $(function() {
             $('#myTab a:last').tab('show')
         })
+        $(document).ready(function() {
+            $('.mdb-select').material_select();
+        });
     </script>
 
 

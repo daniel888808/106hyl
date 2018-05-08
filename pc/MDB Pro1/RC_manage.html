@@ -21,43 +21,68 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white flex w-100 z-index999">
-            <a class="navbar-brand" href="E_manage.html"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
-            <h3 class="bold ml-3 mb-0 pt-2">華友聯後臺管理系統</h3>
-            </span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex w-100 z-index999">
+            <a class="navbar-brand" href="All_manage.html"><img src="http://www.huayulien.com/wp-content/uploads/2015/04/H-logo-e1429491876768.png" class="img-fluid flex-center"></a>
+
+            <ul class="navbar-nav nav-flex-icons mr-auto">
+
+                <li class="nav-item">
+                    <a href="All_manage.html" class="nav-link">
+                        <p class="white-text">使用者管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="C_manage.html" class="nav-link">
+                        <p class="white-text">案件管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="RC_manage.html" class="nav-link">
+                        <p class="white-text">廠商管理</p>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="Com_manage.html" class="nav-link">
+                        <p class="white-text">建案管理</p>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="dropdown ">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell white-text fa-10x mt-1" aria-hidden="true"></i> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="case.html">編號:B123456----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:C983147----案件已逾期</a>
+                        <a class="dropdown-item" href="case.html">編號:F373991----案件已逾期</a>
+                    </div>
+                </li>
+
+
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-circle fa-2x white-text" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">登出</a>
+                    </div>
+                </li>
+            </ul>
+
         </nav>
     </header>
-    <div class="container-fulid" style="padding-top:75px">
+    <div class="container" style="padding-top:75px">
         <div class="row">
-            <div class="col-lg-2 col-md-4">
-                <div class="bg-dark text-white w-200 maxHeight flex top-75">
-                    <!-- Side navigation links -->
-                    <ul class="none mt-3 p-0">
-                        <li>
-                            <a href="E_manage.html" class="waves-effect w-100 pl-3 py-2">工務主任管理</a>
-                        </li>
-                        <li>
-                            <a href="cus_infor.html" class="waves-effect w-100  pl-3 py-2">住戶資料管理</a>
-                        </li>
-                        <li>
-                            <a href="C_manage.html" class="waves-effect w-100  pl-3 py-2">案件管理</a>
-                        </li>
-                        <li>
-                            <a href="RC_manage.html" class="waves-effect w-100  pl-3 py-2">廠商管理</a>
-                        </li>
-                        <li>
-                            <a href="Com_manage.html" class="waves-effect w-100  pl-3 py-2">社區基本資料管理</a>
-                        </li>
-                        <li>
-                            <a href="Rank_manage.html" class="waves-effect w-100  pl-3 py-2">報表管理</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-9 col-md-7">
+            <div class="col-12">
                 <div class="w-100 p-2  borderB">
-                    <h1 class="bold">維修廠商</h1>
+                    <h1 class="bold">廠商管理</h1>
                 </div>
 
                 <div class="text-center">
@@ -78,29 +103,150 @@
                     <button type="button" class="btn btn-indigo btn-sm mx-3 ">搜尋</button>
                     <a href="RC_new.html"><button type="button" class="btn btn-indigo btn-sm mx-3">新增維修廠商</button></a>
                 </div>
+                <div class="overFlow1">
+                    <table class="table text-center mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h5 bold py-2 w-25">廠商名稱</th>
+                                <th scope="col" class="h5 pl-5 pr-0 bold py-2 w-20">廠商類別</th>
+                                <th scope="col" class="h5 pl-5 pr-0 bold py-2 w-27">廠商負責人</th>
+                                <th scope="col" class="h5 px-0 bold py-2">刪除資料</th>
+                                <th scope="col" class="h5 px-0 bold py-2">修改資料</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
 
-                <table class="table text-center mb-0">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="h5 bold py-2">廠商名稱</th>
-                            <th scope="col" class="h5 pl-5 pr-0 bold py-2">廠商類別</th>
-                            <th scope="col" class="h5 pl-5 pr-0 bold py-2">廠商負責人</th>
-                            <th scope="col" class="h5 px-0 bold py-2">刪除資料</th>
-                            <th scope="col" class="h5 px-0 bold py-2">修改資料</th>
-                        </tr>
-                    </thead>
-                </table>
-
-                <div class="overFlow">
+                <div class="overFlow2">
                     <table class="table text-center">
                         <tbody>
+                            <tr>
+                                <th class="py-2 w-25">洪彬電機</th>
+                                <td class="py-2 w-25">
+                                    電機類
+                                </td>
+                                <td class="py-2 w-23">
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <th class="py-2">洪彬電機</th>
                                 <td class="py-2">
                                     電機類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-2">洪彬電機</th>
+                                <td class="py-2">
+                                    電機類
+                                </td>
+                                <td class="py-2">
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-2">洪彬電機</th>
+                                <td class="py-2">
+                                    電機類
+                                </td>
+                                <td class="py-2">
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-2">洪彬電機</th>
+                                <td class="py-2">
+                                    電機類
+                                </td>
+                                <td class="py-2">
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-2">洪彬電機</th>
+                                <td class="py-2">
+                                    電機類
+                                </td>
+                                <td class="py-2">
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -124,7 +270,7 @@
                                     電機類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -148,7 +294,7 @@
                                     水電類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -172,7 +318,7 @@
                                     水電類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -196,7 +342,7 @@
                                     水電類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -220,7 +366,7 @@
                                     油漆工程類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -244,7 +390,7 @@
                                     油漆工程類
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -265,10 +411,10 @@
                             <tr>
                                 <th class="py-2">宏為清潔</th>
                                 <td class="py-2">
-                                    清潔服務費
+                                    清潔服務
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    菜文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -290,10 +436,10 @@
                             <tr>
                                 <th class="py-2">宏為清潔</th>
                                 <td class="py-2">
-                                    清潔服務費
+                                    清潔服務
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -316,37 +462,10 @@
                             <tr>
                                 <th class="py-2">宏為清潔</th>
                                 <td class="py-2">
-                                    清潔服務費
+                                    清潔服務
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
-                                </td>
-                                <td class="py-0">
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2">
-                                    <i class="fa fa-close fa-lg text-dark"></i>
-                                </a>
-                                    </div>
-                                </td>
-
-                                <td class="py-0">
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
-                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
-                                </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-
-                            <tr>
-                                <th class="py-2">宏為清潔</th>
-                                <td class="py-2">
-                                    清潔服務費
-                                </td>
-                                <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -370,10 +489,37 @@
                             <tr>
                                 <th class="py-2">宏為清潔</th>
                                 <td class="py-2">
-                                    清潔服務費
+                                    清潔服務
                                 </td>
                                 <td class="py-2">
-                                    菜瑛文
+                                    葉文豪
+                                </td>
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2">
+                                    <i class="fa fa-close fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+
+                                <td class="py-0">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a type="button" class="btn bg-transparent p-2" href="RC_edit.html">
+                                    <i class="fa fa-pencil-square-o fa-lg text-dark"></i>
+                                </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <th class="py-2">宏為清潔</th>
+                                <td class="py-2">
+                                    清潔服務
+                                </td>
+                                <td class="py-2">
+                                    葉文豪
                                 </td>
                                 <td class="py-0">
                                     <div class="btn-group" role="group" aria-label="Basic example">
