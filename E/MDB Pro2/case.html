@@ -287,20 +287,37 @@
             <div class="col-12 mt-4">
                 <span>選擇適用時間</span>
             </div>
-            <div class="col mt-2 ">
+            <div class=" mt-2 ">
                 <div class="form-check">
                     <input class="form-check-input " name="group100" type="radio" id="radio100">
                     <label class="form-check-label font30" for="radio100">2017/02/03 07:00</label>
                 </div>
             </div>
-            <div class="col-md mt-2 ">
+            <div class=" mt-2 ">
                 <div class="form-check">
                     <input class="form-check-input " name="group100" type="radio" id="radio101">
                     <label class="form-check-label font30" for="radio101">2017/02/04 06:00</label>
                 </div>
             </div>
+            <div class=" mt-2 ">
+                <div class="form-check">
+                    <input class="form-check-input " name="group100" type="radio" id="radio102">
+                    <label class="form-check-label font30" for="radio102">其他:</label>
+                    <div class="form-check">
+                    <div class="row my-0">
+                        <div class="col-6">
+                            <input type="date" class="form-control" id="month1" placeholder="Enter month">
+                        </div>
+                        <div class="col-6">
+                            <input placeholder="時間" type="text" id="input_starttime1" class="form-control timepicker">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
             <button type="button" class="btn btn-indigo font30">確認</button>
         </div>
+    </div>
 
     </div>
     </div>
@@ -327,6 +344,7 @@
         $(document).ready(function() {
             $('.mdb-select').material_select();
         });
+        $('#input_starttime1').pickatime({});
     </script>
 
 

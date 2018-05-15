@@ -38,10 +38,7 @@
 
 
 
-
-
-
-
+<!-----------this week(5/5)-------------!>
 
 E case 項目分類OK 完成日期OK 描述排版 select字小 首頁下面那條調整ok 完成日期刪掉OK
 PC 新增使用者下拉式OK
@@ -51,7 +48,101 @@ E case、casefinal、e_progress維修單新增分類OK
 建案刪除紐  ok
 
 
+<!-----------this week(5/10)-------------!>
+
+(meeting完後待討論事項)
+E APP case 時間表單整合  ok
+建案管理table加負責人(工務主任)  ok
+後臺工具列改row-col式
+
+設定多種廠商類型  ok
+後台新增維修單 ok(?)
+顧客端app只顯示一個禮拜內的維修紀錄 ok
+客戶報修時可以上傳照片或錄影
+維修專線轉接(聯絡我們)
+廠商端APP待確認
+
+<!-----------this week(5/15)-------------!>
+
+visio
+report
 
 
+資料庫設計
+使用者 ( User )
+    使用者編號 User_ID (主鍵)     INT
+    使用者帳號 User_account  VARCHAR
+    使用者密碼 User_password VARCHAR
+    使用者名稱 User_Name     VARCHAR
+    使用者型態 User_type     VARCHAR
+    使用者電話 User_phone    INT
+    使用者戶號 User_num      INT
+    保固期限   User_warrenty DATE
+    建案編號   User_Building_ID(連Building_ID) INT
+    
+通知Notice
+    通知編號   Notice_ID (主鍵)     INT
+    通知類型編號 Notice_type_ID INT
+    案件編號   Case_ID INT
+    通知名稱 Notice_name VARCHAR
+    
+通知類型Notice_Type
+    通知類型編號 Notice_Type_ID (主鍵) INT
+    通知類型名稱 Notice_Type_Name(useless) VARCHAR
+  
+案件Case
+    案件編號     Case_ID(主鍵)     INT
+    案件狀態     Case_status       INT
+    建案編號     Building_ID(外鍵) INT
+    使用者編號   User_ID(外鍵)     INT
+    案件名稱     Case_Name         VARCHAR
+    案件受理日期時間 Case_In_datetime       DATETIME
+    案件完成日期時間 Case_Finish_datetime   DATETIME
+    案件預約日期時間 Case_Reserve_date (json型態)  JSON
+    維修類型     Case_Type(連RCT_ID) INT
+    案件維修原因 Case_Reason       VARCHAR
+    案件詳細資料 Case_Detail       TEXT
+    案件維修照片 Case_Images       VARCHAR(檔名及路徑)
+    案件維修影片 Case_Videos       VARCHAR(檔名及路徑)
+    用戶簽名     Case_Signature    BLOB
+    案件維修廠商 Case_Repair_Compony_ID(json型態 多個 連repair_compony_id)  JSON
+    聯絡情況     Case_Contact_text(json型態)  JSON
+    顧客評價     Case_User_Rank  INT
+    顧客評價訊息 Case_User_Message VARCHAR
 
+維修歷程 Repair_History
+    維修歷程編號 Repair_History_ID (主鍵) INT
+    案件編號     Case_ID (外鍵)           INT
+    施工日期     Repair_Date              DATE
+    施工廠商     Repair_Company_ID (外鍵) INT
+    工時         Repair_time    VARCHAR
+    維修內容     Repair_Content VARCHAR
+    備註         Repair_History_Note VARCHAR
 
+建案Building
+     建案編號     Building_ID (主鍵) INT
+     建案負責人   Building_admin     VARCHAR
+     建案連絡電話 Building_phone     VARCHAR
+     建案戶數     Building_number    INT
+     建案名稱     Building_Name      VARCHAR
+     建案地址     Building_address   VARCHAR
+     工務主任     Engineer_ID(連user_ID) INT
+     
+維修廠商Repair_company
+    維修廠商編號 Repair_company_ID (主鍵) INT
+    維修廠商名稱 Repair_company_Name      VARCHAR
+    維修廠商 Repair_company_admin         INT
+    維修廠商地址 Repair_company_Address   VARCHAR
+    維修廠商電話  Repair_company_Phone    INT
+    維修廠商類別  Repair_company_Type(連RCT_ID json格式) 
+    維修廠商項目 Repair_company_Text      VARCHAR
+    
+維修廠商種類 Repair_Company_Type
+    維修廠商種類編號 RCT_ID (主鍵)  INT
+    維修廠商種類名稱 RCTT_name      VARCHAR
+    
+訊息News
+    訊息標題 News_Topic  VARCHAR
+    訊息內容 News_Content VARCHAR
+    訊息網址 News_Url   VARCHAR
+    訊息圖片 News_Image VARCHAR(檔名及路徑)
